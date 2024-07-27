@@ -65,4 +65,5 @@ public class Park {
         // Выводим информацию о всех аттракционах парка
         park.displayAttractions();
     }
+
 }

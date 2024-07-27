@@ -41,5 +41,4 @@ public class Employee {
         // Вызыв метода printInfo() для вывода информации о сотруднике
         employee.printInfo();
     }
-
 }

@@ -15,5 +15,4 @@ public class Person {
             employee.printInfo();
         }
     }
-
 }
