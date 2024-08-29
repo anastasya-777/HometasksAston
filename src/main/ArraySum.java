@@ -46,12 +46,20 @@ public class ArraySum {
     }
 
     public static int calculateSum(String[][] array) throws MyArraySizeException, MyArrayDataException {
-        if (array.length != 4 || array[0].length != 4) {
-            throw new MyArraySizeException("Размер массива должен быть 4x4.");
+        // Проверяем, что массив имеет размер 4x4
+        if (array.length != 4) {
+            throw new MyArraySizeException("Количество строк в массиве должно быть 4.");
+        }
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i].length != 4) {
+                throw new MyArraySizeException("Количество элементов в строке " + i + " должно быть 4.");
+            }
         }
 
         int sum = 0;
 
+        // Проходим по всем элементам массива и суммируем их
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 try {
