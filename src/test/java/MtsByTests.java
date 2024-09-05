@@ -83,7 +83,6 @@ public class MtsByTests {
         assertNotNull(moreInfoLink, "Ссылка 'Подробнее о сервисе' должна быть найдена");
         moreInfoLink.click();
 
-        // Дополнительные проверки, если требуется (например, проверка URL или открывшегося контента)
     }
 
     @Test
@@ -102,6 +101,6 @@ public class MtsByTests {
 
         continueButton.click();
 
-        // Дополнительные проверки после нажатия кнопки, если требуется
+       
     }
 }
